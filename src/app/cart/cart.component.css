@@ -1,0 +1,48 @@
+input[type=text]{
+  
+    width: 100% ; 
+    padding : 12px 20px;
+    margin : 8px 0;
+    box-sizing : border-box;
+    /* border : 3px solid #ccc; */
+    -webkit-transition: 0.5s;
+    transition : 0.5s; 
+    outline : none;
+
+}
+
+input[type=text]:focus {
+    border:3px solid #555;
+
+}
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 1px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+     transition-duration: 0.4s; 
+    cursor: pointer;
+  }
+
+  .button4 {
+    background-color: white;
+    color: black;
+    border: 3px solid #ccc;  
+  }
+
+  .button4:hover {background-color: #e7e7e7;}
+
+  .jumbotron{
+    margin-top:70px;
+  }
+
+  .btn1{  
+    margin-left:5px;
+  }

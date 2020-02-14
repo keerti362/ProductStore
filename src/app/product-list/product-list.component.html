@@ -1,0 +1,63 @@
+ <div class="jumbotron">
+
+         <h2 align="center"><u>Welcome to Store</u></h2>
+         <br>
+        <h2>Products</h2>
+
+        
+                <div *ngFor="let product of  products">
+                <br>
+             <h3>
+                
+                   <a [title]="product.name + 'details'" [routerLink] = "['/product-deatils',product.id ]" >{{product.name}}</a> 
+             </h3>
+
+             <p *ngIf='product.description'>
+                    Description: {{product.description}}
+             </p>
+
+             <button type="button"  class="btn btn-primary btn-sm adjust" (click)="share()">Share</button>
+    
+         <!-- <app-product-alerts
+            [product]="product"  (notify)="onNotify()">
+            </app-product-alerts>  -->
+        
+        </div>
+
+</div> 
+
+<!-- <div class="jumbotron">
+    <div class="container">
+
+        <h2 class="text-center">Welcome to Store</h2>
+        <hr>
+
+        <div>
+            <h4 class="text-info">Products</h4>
+            <br>
+
+            <table class="table table-bordered">
+                <thead>
+                    <tr class="text-center">
+                        <th>No.</th>
+                        <th>Products</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr class="text-center" *ngFor="let product of products">
+                        <td>{{ product.id }}</td>
+                        <td><a [title]="product.name + ' details'" [routerLink]="['/product-deatils',product.id]">
+                                {{ product.name }}</a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+        <div class="text-right">
+            <pagination-controls (pageChange)="pagination($event)"></pagination-controls>
+
+        </div>
+    </div>
+</div> -->

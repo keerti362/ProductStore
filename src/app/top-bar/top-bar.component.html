@@ -1,0 +1,27 @@
+<!-- <a [routerLink]="['/']">
+    <h1>My Store</h1>
+  </a>
+  
+  <a [routerLink]="['/cart']" class="button fancy-button"><i class="material-icons">shopping_cart</i>Checkout</a> -->
+
+<div class="header">
+
+      <a routerLink="/store" class="logo">Store</a>
+
+      <a routerLink="/" class="logo">About</a>
+
+      <a routerLink="/contact" class="logo">Contact</a>
+
+      <input class="search" type="text" placeholder="Search...." [(ngModel)]="name" name="search">
+      <button type="submit" class="button-radius button-search" [routerLink]="['/search-product', name]"><i
+                  class="fa fa-search icon"></i></button>
+
+      <div class="header-right">
+            <a routerLink="cart">
+                  <button class="button">checkout
+                        <span><i class="fa fa-shopping-cart"></i></span>
+                  </button>
+            </a>
+      </div>
+
+</div>

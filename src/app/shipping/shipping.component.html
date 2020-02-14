@@ -1,0 +1,14 @@
+<div class="jumbotron">
+
+        <h3><u>Shipping Prices</u></h3>
+        <br>
+
+        <div class="shipping-item" *ngFor="let shipping of shippingCosts | async">
+            <span>{{ shipping.type + " : "}}</span>
+            <span>{{ shipping.price }}</span>
+            <span><i class="fa fa-dollar"></i></span>
+        
+        </div>
+</div>
+
+

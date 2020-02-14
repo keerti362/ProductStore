@@ -1,0 +1,20 @@
+<div class="jumbotron">
+
+    <h2>Product Details</h2>
+    <hr>
+
+    <div *ngFor="let product of products">
+        <h5>{{ "Product : " + product.name }}</h5>
+
+        <h5>{{ "Price : " + product.price }}</h5>
+
+        <p>{{ " Description : " + product.description }}</p>
+
+        <button type="button" class="btn btn-success btn-sm" (click)="addToCart(product)">Buy</button>
+        <button type="button" class="btn btn-danger btn-sm button1" routerLink="/store">Cancel</button>
+        <br>
+        <br>
+    </div>
+
+
+</div>

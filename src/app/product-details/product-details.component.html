@@ -1,0 +1,29 @@
+
+<div class="jumbotron">
+
+        <h2><u>Product Details</u></h2>
+        <br>
+        
+        <div *ngIf="product">
+            <h4>{{"Product : " + product.name }}</h4>
+            <br>
+            <h4>{{"Price : " + product.price }}</h4>
+            <br>
+            <h4>{{ "Color : " + product.color }}</h4>
+            <br>
+            <p>{{ "Description : " + product.description }}</p>
+            <br>
+
+            <!-- <app-product-alerts
+            [product]="product"  (notify)="onNotify()">
+            </app-product-alerts> -->
+            
+        
+            <button type="button" class="btn btn-success btn-sm" (click)="addToCart(product)">Buy</button>
+
+            <button type="button" class="btn btn-danger btn-sm button1" routerLink="/store">Cancel</button>
+            <!-- <button type="button" class="btn btn-danger btn-sm button1">Cancel</button> -->
+        
+        </div>
+    
+</div>
